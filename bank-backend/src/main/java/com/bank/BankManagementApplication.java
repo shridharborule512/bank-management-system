@@ -11,7 +11,6 @@ public class BankManagementApplication {
 		System.err.println("app started");
 		System.err.println("app started");
 
-		
 	}
 
 }
