@@ -26,22 +26,35 @@ public class JwtFilter extends OncePerRequestFilter {
                                     FilterChain filterChain)
                                     throws ServletException, IOException {
 
+        // Skip filter for login and register
+        String path = request.getServletPath();
+        if (path.equals("/api/user/login") ||
+            path.equals("/api/user/register")) {
+            filterChain.doFilter(request, response);
+            return;
+        }
+
         String authHeader = request.getHeader("Authorization");
 
         if (authHeader != null && authHeader.startsWith("Bearer ")) {
             String token = authHeader.substring(7);
 
-            if (jwtUtil.validateToken(token)) {
-                String email = jwtUtil.getEmailFromToken(token);
-                String role  = jwtUtil.getRoleFromToken(token);
+            try {
+                if (jwtUtil.validateToken(token)) {
+                    String email = jwtUtil.getEmailFromToken(token);
+                    String role  = jwtUtil.getRoleFromToken(token);
 
-                UsernamePasswordAuthenticationToken authentication =
-                    new UsernamePasswordAuthenticationToken(
-                        email, null,
-                        List.of(new SimpleGrantedAuthority("ROLE_" + role))
-                    );
+                    UsernamePasswordAuthenticationToken authentication =
+                        new UsernamePasswordAuthenticationToken(
+                            email, null,
+                            List.of(new SimpleGrantedAuthority("ROLE_" + role))
+                        );
 
-                SecurityContextHolder.getContext().setAuthentication(authentication);
+                    SecurityContextHolder.getContext()
+                        .setAuthentication(authentication);
+                }
+            } catch (Exception e) {
+                System.out.println("JWT Error: " + e.getMessage());
             }
         }
 

@@ -1,32 +1,38 @@
 import axios from 'axios';
+import UserService from './UserService';
 
 const BASE_URL = 'http://localhost:8081/api/account';
 
+const authHeader = () => ({
+    headers: {
+        Authorization: `Bearer ${UserService.getToken()}`
+    }
+});
+
 const AccountService = {
 
-    // Get all accounts
     getAllAccounts: () => {
-        return axios.get(`${BASE_URL}/all`);
+        return axios.get(`${BASE_URL}/all`, authHeader());
     },
 
-    // Get account by ID
     getAccountById: (id) => {
-        return axios.get(`${BASE_URL}/${id}`);
+        return axios.get(`${BASE_URL}/${id}`, authHeader());
     },
 
-    // Create account
     createAccount: (account) => {
-        return axios.post(`${BASE_URL}/create`, account);
+        return axios.post(`${BASE_URL}/create`, account, authHeader());
     },
 
-    // Update account
+    createMultipleAccounts: (accounts) => {
+        return axios.post(`${BASE_URL}/create-all`, accounts, authHeader());
+    },
+
     updateAccount: (id, account) => {
-        return axios.put(`${BASE_URL}/update/${id}`, account);
+        return axios.put(`${BASE_URL}/update/${id}`, account, authHeader());
     },
 
-    // Delete account
     deleteAccount: (id) => {
-        return axios.delete(`${BASE_URL}/delete/${id}`);
+        return axios.delete(`${BASE_URL}/delete/${id}`, authHeader());
     }
 };
 
