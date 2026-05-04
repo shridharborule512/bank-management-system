@@ -1,0 +1,21 @@
+2026-05-04 10:25:28,766 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2026-05-04 10:28:19,085 [Worker-5: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bank:bank-management:0.0.1-SNAPSHOT @ C:\Users\admin\Desktop\Advance_java\bank-management\bank-backend\pom.xml.
+2026-05-04 10:28:30,974 [Worker-4: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bank:bank-management:0.0.1-SNAPSHOT @ C:\Users\admin\Desktop\Advance_java\bank-management\bank-backend\pom.xml.
+2026-05-04 10:28:53,029 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-05-04 10:28:53,082 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-05-04 10:28:53,096 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\admin\Desktop\Advance_java\bank-management\bank-backend\src\test\resources
+2026-05-04 10:28:56,595 [Worker-4: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bank:bank-management:0.0.1-SNAPSHOT @ C:\Users\admin\Desktop\Advance_java\bank-management\bank-backend\pom.xml.
+2026-05-04 10:28:58,017 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-05-04 10:28:58,057 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-05-04 10:28:58,071 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\admin\Desktop\Advance_java\bank-management\bank-backend\src\test\resources
+2026-05-04 10:29:20,187 [Worker-4: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2026-05-04 10:29:21,433 [Worker-4: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bank:bank-management:0.0.1-SNAPSHOT @ C:\Users\admin\Desktop\Advance_java\bank-management\bank-backend\pom.xml.
+2026-05-04 10:29:23,401 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bank-backend/src/main/java
+2026-05-04 10:29:23,406 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bank-backend/src/main/resources
+2026-05-04 10:29:23,409 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bank-backend/src/main/resources
+2026-05-04 10:29:23,411 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bank-backend/src/test/java
+2026-05-04 10:29:23,414 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bank-backend/src/test/resources
+2026-05-04 10:29:24,506 [Worker-4: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 2.00 sec, update config takes 1.00 sec 
+2026-05-04 10:30:49,338 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-05-04 10:30:49,368 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-05-04 10:30:49,378 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\admin\Desktop\Advance_java\bank-management\bank-backend\src\test\resources
