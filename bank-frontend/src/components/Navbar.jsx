@@ -12,6 +12,7 @@ function Navbar() {
                 {isLogin ? (
                     <>
                         <a href="/"        style={styles.link}>Dashboard</a>
+                        <a href="/profile" style={styles.link}>👤 {user?.fullName}</a>
                         <a href="/create"  style={styles.link}>New Account</a>
                         <a href="/update"  style={styles.link}>Update</a>
                         <span style={styles.userBadge}>

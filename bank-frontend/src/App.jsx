@@ -12,6 +12,8 @@ import Transfer from './components/Transfer';
 import TransactionHistory from './components/TransactionHistory';
 import AdminUserList from './components/AdminUserList';
 import UserService from './services/UserService';
+import Profile from './components/Profile';
+
 
 function App() {
     const path    = window.location.pathname;
@@ -22,6 +24,7 @@ function App() {
     // Public routes
     if (path === '/login')    return <Login />;
     if (path === '/register') return <Register />;
+    
 
     // Redirect to login if not logged in
     if (!isLogin) {
@@ -38,6 +41,7 @@ function App() {
     return (
         <div>
             <Navbar />
+            {path === '/profile' && <Profile />}
             {path === '/'            && <Dashboard />}
             {path === '/accounts'    && <AccountList />}
             {path === '/create'      && <CreateAccount />}
